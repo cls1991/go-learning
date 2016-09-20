@@ -54,6 +54,17 @@ func main() {
 	fmt.Println("sum of slice is", Sum3(slice))
 	fmt.Printf("slice: %v\n", slice)
 	fmt.Println("*********************************")
-	fmt.Println("Hello, playground")
+
+	// test slice append
+	x := []int{1, 10, 2}
+	x = append(x, 9, 7)
+	fmt.Printf("%#v\n", x)
+	fmt.Println(x)
+	fmt.Println("********************")
+	x2 := []string{"hello", "go"}
+	y2 := []string{"go is nice", "hello, go"}
+	x2 = append(x2, y2...)
+	fmt.Printf("%#v\n", x2)
+	fmt.Println(x2)
 
 }

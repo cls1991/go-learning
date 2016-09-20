@@ -16,6 +16,8 @@ func (t *T) String() string {
 
 }
 
+type S string
+
 // 循环调用, 错误示例
 func (s S) String() string {
 	return fmt.Sprintf("S=%s", s)
@@ -34,6 +36,5 @@ func main() {
 	fmt.Printf("%v\n", t)
 	fmt.Printf("%+v\n", t)
 	fmt.Printf("%#v\n", t)
-	fmt.Println("Hello, playground")
 
 }
