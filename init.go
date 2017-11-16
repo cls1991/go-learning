@@ -1,10 +1,10 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"log"
 	"os"
+	"flag"
 )
 
 type ByteSize float64
@@ -27,22 +27,17 @@ var (
 func init() {
 	if user == "" {
 		log.Fatal("$USER is not set")
-
 	}
 	if home == "" {
 		home = "/home/" + user
-
 	}
 	if gopath == "" {
 		gopath = home + "/go"
-
 	}
 	flag.StringVar(&gopath, "gopath", gopath, "override default GOPATH")
-
 }
 
 func main() {
 	fmt.Println("constants are:", KB, MB, GB, TB, PB)
 	fmt.Println("vars are:", home, user, gopath)
-
 }
