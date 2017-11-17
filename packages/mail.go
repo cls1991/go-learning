@@ -2,8 +2,8 @@ package packages
 
 import (
 	"fmt"
-	"strings"
 	"net/smtp"
+	"strings"
 )
 
 const (
@@ -19,11 +19,11 @@ type Mail struct {
 	msg     string "msg"
 }
 
-func NewMail(to, subject, msg string) *Mail {
+func newMail(to, subject, msg string) *Mail {
 	return &Mail{to, subject, msg}
 }
 
-func SendMail(mail *Mail) {
+func sendMail(mail *Mail) {
 	auth := smtp.PlainAuth("", USER, PASSWORD, HOST)
 	sendTo := strings.Split(mail.to, ";")
 	done := make(chan error, 1024)
