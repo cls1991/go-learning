@@ -1,8 +1,6 @@
 package methods
-//package main
 
 import (
-	//"fmt"
 	"math"
 )
 
@@ -44,20 +42,3 @@ func Scale(v *Vertex, rate float64) {
 	v.X *= rate
 	v.Y *= rate
 }
-
-// test case
-//func main() {
-//	// value receiver
-//	v := Vertex{X: 10}
-//	v.Scale(10)
-//	fmt.Println(v.Abs(), Abs(v), v)
-//
-//	// pointer receiver
-//	p := &Vertex{3, 4}
-//	p.Scale(10)
-//	fmt.Println(p.Abs(), Abs(*p), p)
-//
-//	// func
-//	Scale(&v, 10)
-//	fmt.Println(Abs(v), v)
-//}
