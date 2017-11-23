@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestType(t *testing.T)  {
+func TestType(t *testing.T) {
 	var i interface{} = "golang"
 	s := i.(string)
 	fmt.Println(s)

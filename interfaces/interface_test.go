@@ -1,9 +1,9 @@
 package interfaces
 
 import (
-	"testing"
-	"math"
 	"fmt"
+	"math"
+	"testing"
 )
 
 func TestInterface(t *testing.T) {

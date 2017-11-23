@@ -5,14 +5,14 @@ import (
 	"testing"
 )
 
-func TestChannel(t *testing.T)  {
+func TestChannel(t *testing.T) {
 	// channel
-	s := []int {1, 3, 5, 7, 9}
+	s := []int{1, 3, 5, 7, 9}
 	c := make(chan int)
 	go sum(s[:len(s)/2], c)
 	go sum(s[len(s)/2:], c)
 	x, y := <-c, <-c
-	fmt.Println(x, y, x + y)
+	fmt.Println(x, y, x+y)
 
 	// range and close
 	c2 := make(chan int, 10)

@@ -19,7 +19,7 @@ type Vertex struct {
 
 /*
 	Methods
- */
+*/
 
 func (v Vertex) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
@@ -32,7 +32,7 @@ func (v *Vertex) Scale(rate float64) {
 
 /*
 	Functions equivalent
- */
+*/
 
 func Abs(v Vertex) float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)

@@ -1,9 +1,9 @@
 package goroutines
 
 import (
-	"time"
 	"fmt"
 	"testing"
+	"time"
 )
 
 func TestGoroutine(t *testing.T) {
